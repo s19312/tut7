@@ -1,0 +1,10 @@
+C:\Users\Ego\Desktop\t7\tut7\tut7\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Ego\Desktop\t7\tut7\tut7\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Ego\Desktop\t7\tut7\tut7\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Ego\Desktop\t7\tut7\tut7\bin\Debug\netcoreapp3.1\tut7.exe
+C:\Users\Ego\Desktop\t7\tut7\tut7\obj\Debug\netcoreapp3.1\tut7.csprojAssemblyReference.cache
+C:\Users\Ego\Desktop\t7\tut7\tut7\obj\Debug\netcoreapp3.1\staticwebassets\tut7.StaticWebAssets.Manifest.cache
+C:\Users\Ego\Desktop\t7\tut7\tut7\obj\Debug\netcoreapp3.1\staticwebassets\tut7.StaticWebAssets.xml
+C:\Users\Ego\Desktop\t7\tut7\tut7\obj\Debug\netcoreapp3.1\tut7.AssemblyInfoInputs.cache
+C:\Users\Ego\Desktop\t7\tut7\tut7\obj\Debug\netcoreapp3.1\tut7.AssemblyInfo.cs
+C:\Users\Ego\Desktop\t7\tut7\tut7\obj\Debug\netcoreapp3.1\tut7.RazorTargetAssemblyInfo.cache
