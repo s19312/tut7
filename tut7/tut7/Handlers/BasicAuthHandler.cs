@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using tut7.Controllers;
+using tut7.Services;
 
 namespace tut7.Handlers
 {
@@ -21,15 +22,10 @@ namespace tut7.Handlers
             
 
         IOptionsMonitor<AuthenticationSchemeOptions> options,
-
              ILoggerFactory logger,
-
              UrlEncoder encoder,
-
              ISystemClock clock,  
-
             IStudentServiceDb service
-
          ) : base(options, logger, encoder, clock)  
 
         {
@@ -55,33 +51,23 @@ namespace tut7.Handlers
             var credentialsBytes = Convert.FromBase64String(authHeader.Parameter);  
             var credentials = Encoding.UTF8.GetString(credentialsBytes).Split(":"); 
 
-
-
             if (credentials.Length != 2)
-
             {
 
-                return AuthenticateResult.Fail("Incorrect authorization header value");  
+                return AuthenticateResult.Fail("Fail authorization header value");  
 
             }
 
-            bool validation = _ service.validationCredential(credentials[0], credentials[1]);
+            bool validation = _service.validation(credentials[0], credentials[1]);
 
             if (validation == false)
 
             {
-
                 return AuthenticateResult.Fail("Incorrect username or password.");
-
             }
 
-
-
-
             var claims = new[]
-
             {
-
                 new Claim(ClaimTypes.NameIdentifier, "1"),
 
                 new Claim(ClaimTypes.Name, credentials[0]),
@@ -89,9 +75,6 @@ namespace tut7.Handlers
                 new Claim(ClaimTypes.Role, "admin"),
 
                 new Claim(ClaimTypes.Role, "employee")
-
-
-
             };
 
 

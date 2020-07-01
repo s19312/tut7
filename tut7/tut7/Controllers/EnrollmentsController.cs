@@ -17,7 +17,6 @@ namespace tut7.Controllers
 
         public EnrollmentsController(IStudentServiceDb service)
         {
-
             _service = service;
         }
 
@@ -35,7 +34,6 @@ namespace tut7.Controllers
         public IActionResult Enrollment(Enrollment enrollment)
 
         {
-
             return _service.Enrollment(enrollment);
 
         }

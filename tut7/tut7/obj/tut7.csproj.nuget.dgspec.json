@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ego\\Desktop\\t7\\tut7\\tut7\\tut7.csproj": {}
+    "D:\\Study\\APBD\\tut7\\tut7\\tut7\\tut7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ego\\Desktop\\t7\\tut7\\tut7\\tut7.csproj": {
+    "D:\\Study\\APBD\\tut7\\tut7\\tut7\\tut7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ego\\Desktop\\t7\\tut7\\tut7\\tut7.csproj",
+        "projectUniqueName": "D:\\Study\\APBD\\tut7\\tut7\\tut7\\tut7.csproj",
         "projectName": "tut7",
-        "projectPath": "C:\\Users\\Ego\\Desktop\\t7\\tut7\\tut7\\tut7.csproj",
+        "projectPath": "D:\\Study\\APBD\\tut7\\tut7\\tut7\\tut7.csproj",
         "packagesPath": "C:\\Users\\Ego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ego\\Desktop\\t7\\tut7\\tut7\\obj\\",
+        "outputPath": "D:\\Study\\APBD\\tut7\\tut7\\tut7\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ego\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -47,6 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -55,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
